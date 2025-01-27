@@ -1,3 +1,12 @@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@ Note to reader:                                    @@
+@@                                                    @@
+@@ This is the full log output of running the sample. @@
+@@ If you want to find the specific thing logged from @@
+@@ the Activity, just                                 @@
+@@ control f for This-is-the-error-info               @@
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
   npm run start.watch
 
 
