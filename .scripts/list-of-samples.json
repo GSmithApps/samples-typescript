@@ -28,7 +28,7 @@
     "nextjs-ecommerce-oneclick",
     "patching-api",
     "polling-frequent",
-    "polling-infrequent"
+    "polling-infrequent",
     "production",
     "protobufs",
     "query-subscriptions",
