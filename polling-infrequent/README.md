@@ -5,21 +5,9 @@ This sample shows how to use Activity retries for infrequent polling of a third-
 Activity retries are utilized for this option, setting the following Retry options:
 
 - `BackoffCoefficient`: to 1
-- `InitialInterval`: to the polling interval (in this sample set to 60 seconds)
+- `InitialInterval`: to the polling interval (in this sample set to 5 seconds for convenience, but would be at least 60 seconds in real world situations)
 
-This will enable the Activity to be retried exactly on the set interval.
-
-To run, first see [README.md](../../../README.md) for prerequisites. Then, run the following from this directory
-in a separate terminal to start the worker:
-
-    dotnet run worker
-
-Then in another terminal, run the workflow from this directory:
-
-    dotnet run workflow
-
-This will show logs in the worker window of the workflow running.
-
+This will enable the Activity to be retried on the set interval.
 
 ### Running this sample
 
@@ -28,8 +16,7 @@ This will show logs in the worker window of the workflow running.
 1. `npm run start.watch` to start the Worker.
 1. In another shell, `npm run workflow` to run the Workflow Client.
 
-The Workflow should return:
-
-```txt
-Hello, Temporal!
-```
+The Workflow will call the activity and it will call the test service.
+The test service will either succeed or fail by generating a random number between 0 and 1:
+if less than .2, then it will succeed; otherwise it will fail.
+It logs the generated numbers, and when it succeeds, it will log `Hello, Temporal!`.

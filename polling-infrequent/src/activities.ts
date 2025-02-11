@@ -1,5 +1,5 @@
-// @@@SNIPSTART typescript-hello-activity
+import { greetService } from './testService';
+
 export async function greet(name: string): Promise<string> {
-  return `Hello, ${name}!`;
+  return greetService(name);
 }
-// @@@SNIPEND
